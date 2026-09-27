@@ -4,7 +4,7 @@ services:
     name: matisync
     runtime: python
     buildCommand: pip install -r backend/requirements.txt
-    startCommand: cd backend && python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    startCommand: python start.py
     plan: free
     region: oregon
     envVars:
