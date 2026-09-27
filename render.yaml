@@ -1,8 +1,10 @@
 services:
-  # Unified MatiSync Portal (Frontend UI + FastAPI Backend in a single service)
+  # MatiSync Unified Production Web Service on Render
   - type: web
     name: matisync
-    runtime: docker
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && python -m uvicorn app.main:app --host 0.0.0.0 --port $PORT
     plan: free
     region: oregon
     envVars:
@@ -12,3 +14,5 @@ services:
         value: rollout
       - key: ACTIVE_SECTOR
         value: oil_and_gas
+      - key: PYTHON_VERSION
+        value: 3.12.0
