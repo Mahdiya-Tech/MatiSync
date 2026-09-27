@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+backend/__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment and Secrets
+.env
+.env.local
+
+# Executables & Tunnels
+cloudflared.exe
+*.log
+
+# Build outputs (frontend/dist included for zero-build deployment)

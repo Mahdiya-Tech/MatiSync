@@ -1,0 +1,14 @@
+services:
+  # Unified MatiSync Portal (Frontend UI + FastAPI Backend in a single service)
+  - type: web
+    name: matisync
+    runtime: docker
+    plan: free
+    region: oregon
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEPLOYMENT_MODE
+        value: rollout
+      - key: ACTIVE_SECTOR
+        value: oil_and_gas
