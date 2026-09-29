@@ -9,7 +9,6 @@ import {
   Cpu,
   FileText,
   Sliders,
-  BookOpen,
   Lock,
   GitMerge,
   Network,
@@ -143,12 +142,11 @@ export const App: React.FC = () => {
       ]
     },
     {
-      group: 'Governance & Docs',
+      group: 'Governance',
       items: [
         { id: 'problem_solution', label: 'Problem-Solution Matrix', icon: HelpCircle },
         { id: 'audit', label: 'Tamper-Evident Audit', icon: Lock },
-        { id: 'settings', label: 'Platform Governance', icon: Sliders },
-        { id: 'docs', label: 'Documentation & Demo Guide', icon: BookOpen }
+        { id: 'settings', label: 'Platform Governance', icon: Sliders }
       ]
     }
   ];

@@ -65,8 +65,6 @@ export const Navbar: React.FC<Props> = ({
           <span className="font-semibold text-zinc-700 dark:text-zinc-300">Government of India</span>
           <span>&bull;</span>
           <span>Ministry of Petroleum &amp; Natural Gas</span>
-          <span className="hidden md:inline">&bull;</span>
-          <span className="hidden md:inline font-mono text-[10px]">SIH 2026 PS 26099 (CPCL)</span>
         </div>
         
         <div className="flex items-center space-x-3 text-[11px]">

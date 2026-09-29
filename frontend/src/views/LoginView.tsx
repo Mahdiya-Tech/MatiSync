@@ -91,8 +91,6 @@ export const LoginView: React.FC<Props> = ({ onLoginSuccess, theme, onToggleThem
           </span>
           <span className="text-zinc-300 dark:text-zinc-700">|</span>
           <span className="text-zinc-600 dark:text-zinc-400 hidden sm:inline">Ministry of Petroleum &amp; Natural Gas</span>
-          <span className="text-zinc-300 dark:text-zinc-700 hidden md:inline">|</span>
-          <span className="text-zinc-500 dark:text-zinc-400 font-mono text-[11px] hidden md:inline">SIH 2026 PS 26099</span>
         </div>
 
         <div className="flex items-center space-x-2">
